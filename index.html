@@ -3,79 +3,174 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fisicloud by cachuan07</title>
+    <title>Antonio Martín Cachuán Alipázaga</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/misestilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Fisicloud.github.io</h1>
-        <p>Fisi Cloud Pages, now in Git Hub</p>
+      <div id="main" ng-app>
+          <nav class="{{active}}" ng-click="$event.preventDefault()">
+              <a href="#" class="home" ng-click="active='Inicio'">Inicio</a>
+              <a href="#" class="projects" ng-click="active='Proyectos'">Proyectos</a>
+              <a href="#" class="services" ng-click="active='Formación'">Formación</a>
+              <a href="#" class="contact" ng-click="active='Contacto'">Contacto</a>
+          </nav>
+          <!-- ng-show will show an element if the value in the quotes is truthful,
+               while ng-hide does the opposite. Because the active variable is not set
+               initially, this will cause the first paragraph to be visible. -->
+          <p ng-hide="active">Haga clic en un item</p>
+          <p ng-show="active">Usted Eligió <b>{{active}}</b></p>
+      </div>
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+      <script type='text/javascript' src='javascripts/angular.min.js'></script>
+        <div>
+             CURRICULUM VITAE
 
-        <p class="view"><a href="https://github.com/cachuan07/fisicloud.github.io">View the Project on GitHub <small>cachuan07/fisicloud.github.io</small></a></p>
+             DATOS PERSONALES
+             ________________________________________
+
+             Nombres y Apellidos:
+             Antonio Martín Cachuán Alipázaga
+
+             Dirección:
+             Av. Manuel Moncloa y Cobarrubias 2666,
+             Dpto. 401, Urb. Los Cipreses
+             Lima  01
+
+             Teléfono:    564-2936
+
+             Celular   :    975389553
+
+             Fecha y lugar de nacimiento:  07 de febrero, Jesús María
+
+             Edad: 20 años
+
+             Correo electrónico: antoniocachuan@gmail.com
+
+             Licencia de Conducir: A1 Q71528743
+
+       </div>
+      <br>
+       <div>
+             PRESENTACIÓN
+             ________________________________________
+             Estudiante de Ingeniería de Sistemas, me encuentro cursando el cuarto año en la UNMSM. Me gusta investigar y desarrollar más conocimiento relacionado a mi especialidad que me permita realizar trabajos de cada vez mayor calidad, a través de diversas fuentes que pueda tener acceso, además de compartirlo con la comunidad.  Estoy en búsqueda de prácticas para ampliar, reafirmar y consolidar mis conocimientos y capacidades en distintos ámbitos del proceso de desarrollo de software para ponerlos en práctica en la empresa donde me desempeñe.
+
+        </div>
+      <br>
+        <div>
+             EXPERIENCIA LABORAL
+             ________________________________________
+             •	Practicante Pre Profesional
+             Proyecto del Sistema Integral de Gestión Financiera - Quipucamayoc, UNMSM
+             Setiembre 2012 – Mayo 2013
+             Descripción: Mantenimiento y desarrollo de los módulos de Consolidado de Asistencia y Vacaciones de la Universidad Nacional Mayor de San Marcos bajo la metodología Scrum. Los sistemas están basados en Java EE, utilizando los Frameworks: Hibernate para la capa de persistencia, Spring para la integración, JSF para el diseño de la interfaz de usuario; y Oracle 10g como base de datos.
+
+        </div>
+      <br>
+        <div>
+             DATOS ACADÉMICOS
+             ________________________________________
+
+             •	Universidad Nacional Mayor de San Marcos
+             Facultad de Ingeniería de Sistemas e Informática - VIII Ciclo  (2010-Presente)
+
+        </div>
+      <br>
+        <div>
+             FORMACIÓN ACADÉMICA COMPLEMENTARIA REALIZADA
+             ________________________________________
+
+             Cursos presenciales
+
+             •	Centro de Informática de la Universidad Nacional Mayor de San Marcos
+             Módulo I : Experto en Ofimática – Windows, Word, Internet                        - 2005
+
+             Módulo II:  Experto en Ofimática – Excel, Power Point, Outlook                  - 2005
+
+             Módulo I :  Ensamblaje, Diagnóstico y Mantenimiento de Computadores    - 2007
+
+             Módulo II:  Ensamblaje, Diagnóstico y Mantenimiento de Computadores    - 2007
+
+             Curso Básico de Informática                                                                         - 2010
+
+             •	Seminarios
+             “Marketing 2.0:Nuevos medios de Comunicación”, Centro de Ingeniería     -2011
+             TIC CD - Lima
+
+             •	Sistemas UNI
+             Curso Java cliente Servidor                                                                          -2013
+
+             •	Instituto Cultural Peruano Norteamericano, Inglés
+             Nivel Básico                                                                                                   -2010
+             Nivel Intermedio                                                                                             -2012
+             Nivel Avanzado                                                                                              -2013
+
+             Cursos a distancia, online
+
+             •	Lynda.com
+             Git Essential Training                                                                                     -2013
+             Introducing PHP                                                                                             -2013
+             Up and Running with Bootstrap                                                                     -2013
+
+             •	Infinite Skills
+             PHP MySQL                                                                                                   -2013
+
+             •	Code school
+             Try jQuery                                                                                                       -2013
+             Try Ruby                                                                                                         -2013
+             Try Git                                                                                                             -2013
 
 
-        <ul>
-          <li><a href="https://github.com/cachuan07/fisicloud.github.io/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/cachuan07/fisicloud.github.io/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/cachuan07/fisicloud.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-<p>Hola mundo</p>
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+             FORMACIÓN ACADÉMICA COMPLEMENTARIA EN CURSO
+             ________________________________________
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+             Cursos a distancia, online
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+             •	Pontificia Universidad Católica de Chile
+             Evaluación de decisiones estratégicas
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+             •	University of California, Berkeley
+             Software as a Service
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+             •	Lynda.com
+             Drupal 7 Essential Training
+             Responsive Design Fundamentals
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+             Cursos presenciales
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+             •	Enterprise Java Developer
+             Instituto San Ignacio de Loyola
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/cachuan07">cachuan07</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-26485280-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+             IDIOMAS
+             ________________________________________
+             •	Inglés
+             Conversación Intermedio
+             Escritura  Intermedio
+             Lectura Avanzado
+
+
+             EXÁMENES INTERNACIONALES
+             ________________________________________
+             •	ELASH2 (530)                                                                                                -2012
+
+             •	TOEFL ITP (153)                                                                                            -2013
+
+
+
+             07 de Agosto del 2013
+
+
+        </div>
 
   </body>
 </html>

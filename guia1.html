@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escoge una fecha</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' href='css/stylesheet.css'/>
+	</head>
+	<body>
+		<!-- Adding the ng-app declaration to initialize AngularJS -->
+        <div id="main" ng-app>
+            <!-- The navigation menu will get the value of the "active" variable as a class.
+                 The $event.preventDefault() stops the page from jumping when a link is clicked. -->
+
+            <nav class="{{active}}" ng-click="$event.preventDefault()">
+
+                <!-- When a link in the menu is clicked, we set the active variable -->
+
+                <a href="#" class="home" ng-click="active='Inicio'">Inicio</a>
+                <a href="#" class="projects" ng-click="active='Proyectos'">Proyectos</a>
+                <a href="#" class="services" ng-click="active='Servicios'">Servicios</a>
+                <a href="#" class="contact" ng-click="active='Contacto'">Consultas</a>
+            </nav>
+
+            <!-- ng-show will show an element if the value in the quotes is truthful,
+                 while ng-hide does the opposite. Because the active variable is not set
+                 initially, this will cause the first paragraph to be visible. -->
+
+            <p ng-hide="active">Haga clic en un item</p>
+            <p ng-show="active">Usted Eligió <b>{{active}}</b></p>
+        </div>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
+        <script type='text/javascript' src='js/angular.min.js'></script>
+	</body>
+</html>
