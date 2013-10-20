@@ -25,13 +25,12 @@ section, footer, header, aside, nav{
 /*-------------------------
 	The menu
 --------------------------*/
-
 nav{
-	display:inline-block;
-	margin:60px auto 45px;
-	background-color:#5597b4;
-	box-shadow:0 1px 1px #ccc;
-	border-radius:2px;
+    display:inline-block;
+    margin: 5px auto 5px;
+    background-color:#5597b4;
+    box-shadow:0 1px 1px #ccc;
+    border-radius:2px;
 }
 
 nav a{

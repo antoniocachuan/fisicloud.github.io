@@ -6,9 +6,8 @@
     <title>Antonio Martín Cachuán Alipázaga</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="stylesheets/misestilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,7 +17,8 @@
           <nav class="{{active}}" ng-click="$event.preventDefault()">
               <a href="#" class="home" ng-click="active='Inicio'">Inicio</a>
               <a href="#" class="projects" ng-click="active='Proyectos'">Proyectos</a>
-              <a href="#" class="services" ng-click="active='Formación'">Formación</a>
+              <a href="#" class="services" ng-click="active='Formación'">Experiencia</a>
+              <a href="#" class="contact" ng-click="active='Educación'">Eduación</a>
               <a href="#" class="contact" ng-click="active='Contacto'">Contacto</a>
           </nav>
           <!-- ng-show will show an element if the value in the quotes is truthful,
@@ -27,7 +27,6 @@
           <p ng-hide="active">Haga clic en un item</p>
           <p ng-show="active">Usted Eligió <b>{{active}}</b></p>
       </div>
-      <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
       <script type='text/javascript' src='javascripts/angular.min.js'></script>
         <div>
              CURRICULUM VITAE
