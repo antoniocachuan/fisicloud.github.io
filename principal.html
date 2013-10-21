@@ -1,83 +1,179 @@
-<!DOCTYPE html>
+
+
+
+
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="stylesheets/usando/miestilo.css"/>
-    <title>Mi Cv</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Antonio Martín Cachuán Alipázaga</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/misestilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
-<div id="header">
-    <p id="name">Antonio Martín Cachuán Alipázaga</p>
-    <a href="mailto:you@yourdomain.com"><p id="email">antoniocachuan@gmail.com</p></a>
+<div id="main" ng-app>
+    <nav class="{{active}}" ng-click="$event.preventDefault()">
+        <a href="#" class="home" ng-click="active='Inicio'">Inicio</a>
+        <a href="#" class="projects" ng-click="active='Proyectos'">Proyectos</a>
+        <a href="#" class="services" ng-click="active='Formación'">Experiencia</a>
+        <a href="#" class="contact" ng-click="active='Educación'">Eduación</a>
+        <a href="#" class="contact" ng-click="active='Contacto'">Contacto</a>
+    </nav>
+    <!-- ng-show will show an element if the value in the quotes is truthful,
+         while ng-hide does the opposite. Because the active variable is not set
+         initially, this will cause the first paragraph to be visible. -->
+    <p ng-hide="active">Haga clic en un item</p>
+    <p ng-show="active">Usted Eligió <b>{{active}}</b></p>
 </div>
-<div class="left">
-    <br>
-    <section>
-        <h4>Información Personal</h4>
-        <label>Nombres y Apellidos:</label>
-        <p>Antonio Martín Cachuán Alipázaga</p>
-        <label>Fecha de Nacimiento:</label>
-        <p>07 de Febrero 1993</p>
-        <p></p>
-    </section>
+<script type='text/javascript' src='javascripts/angular.min.js'></script>
+<div>
+    CURRICULUM VITAE
+
+    DATOS PERSONALES
+    ________________________________________
+
+    Nombres y Apellidos:
+    Antonio Martín Cachuán Alipázaga
+
+    Dirección:
+    Av. Manuel Moncloa y Cobarrubias 2666,
+    Dpto. 401, Urb. Los Cipreses
+    Lima  01
+
+    Teléfono:    564-2936
+
+    Celular   :    975389553
+
+    Fecha y lugar de nacimiento:  07 de febrero, Jesús María
+
+    Edad: 20 años
+
+    Correo electrónico: antoniocachuan@gmail.com
+
+    Licencia de Conducir: A1 Q71528743
+
 </div>
-<div class="right">
-    <h2>Presentación</h2>
-    <p>Estudiante de Ingeniería de Sistemas, me encuentro cursando el cuarto anio en la UNMSM.
-        Me gusta investigar y desarrollar más conocimiento relacionado a mi especialidad que me permita
-        realizar trabajos de cada vez mayor calidad, a través de diversas fuentes que tenga acceso.
-        Además de compartir lo aprendido con mi comunidad. Estoy en búsqueda de prácticas pre
-        profesionales que me permitan ampliar, reafirmar y consolidar todo lo aprendido en estos años.
-    </p>
-    <h2>Experiencia Laboral</h2>
-    <h3>Practicante Pre Profesional UNMSM </h3>
-    <p> <strong>Descripción:</strong> Mantenimiento y Desarrollo de los módulos de Consolidado de Asistencia
-    y Vacaciones de la Universidad Nacional Mayor de San Marcos bajo la metodolgía Scrum.</br>
-    Los sistemas están basados en Java EE, utilizando los Frameworks: Hibernate para la capa de persistencia,
-    Spring para la integración, JSF para el diseño de la interfaz de usuario, y Oracle 10g como base
-    de datos.
-    </p>
-    <h3>Practicante Pre Profesional Banco de la Nación</h3>
-    <p> <strong>Descripción:</strong>  Análisis de procesos y desarrollo del módulo de Vacaciones para la División de Administración de personal,
-        Departamento de Recursos Humanos.
-        Optimización de los procesos de Control de Asistencia bajo la metodología BPM.
-    </p>
-    <h2>Datos Académicos</h2>
-    <h3>Facultad de Ingeniería de Sistemas e Informática, UNMSM (2010 - Presente)</h3>
-    <ul>
-        <li>Escuela Académico Profesional de Ingeniería de Sistemas</li>
-        <li>Tercio Superior</li>
-    </ul>
-    <h3>Sistemas UNI (2013)</h3>
-    <ul>
-        <li>Java Cliente Servidor</li>
-    </ul>
-    <h3>Instituto San Ignacio de Loyola (2013)</h3>
-    <ul>
-        <li>Enterprice Java Developer</li>
-    </ul>
-    <h2>Habilidades</h2>
-    <h3>Lenguajes de Programación</h3>
-    <div class="miscirculos">
-        <br><br> PHP
-    </div>
-    <div class="miscirculos">
-        <br><br> Java
-    </div>
-    <div class="miscirculos" id="enemy">
-        <br><br> JS
-    </div>
-    <div class="miscirculos">
-        <br><br> Ruby
-    </div>
-    <div class="miscirculos">
-        <br><br> HTML
-    </div>
+<br>
+<div>
+    PRESENTACIÓN
+    ________________________________________
+    Estudiante de Ingeniería de Sistemas, me encuentro cursando el cuarto año en la UNMSM. Me gusta investigar y desarrollar más conocimiento relacionado a mi especialidad que me permita realizar trabajos de cada vez mayor calidad, a través de diversas fuentes que pueda tener acceso, además de compartirlo con la comunidad.  Estoy en búsqueda de prácticas para ampliar, reafirmar y consolidar mis conocimientos y capacidades en distintos ámbitos del proceso de desarrollo de software para ponerlos en práctica en la empresa donde me desempeñe.
+
 </div>
-<p>Frameworks: .NET, Node.js, Django, Ruby on Rails</p>
-<div id="footer">
-    <p>Lima, Perú 01 | Tel: (+511) 975-389-553</p>
+<br>
+<div>
+    EXPERIENCIA LABORAL
+    ________________________________________
+    •	Practicante Pre Profesional
+    Proyecto del Sistema Integral de Gestión Financiera - Quipucamayoc, UNMSM
+    Setiembre 2012 – Mayo 2013
+    Descripción: Mantenimiento y desarrollo de los módulos de Consolidado de Asistencia y Vacaciones de la Universidad Nacional Mayor de San Marcos bajo la metodología Scrum. Los sistemas están basados en Java EE, utilizando los Frameworks: Hibernate para la capa de persistencia, Spring para la integración, JSF para el diseño de la interfaz de usuario; y Oracle 10g como base de datos.
+
 </div>
+<br>
+<div>
+    DATOS ACADÉMICOS
+    ________________________________________
+
+    •	Universidad Nacional Mayor de San Marcos
+    Facultad de Ingeniería de Sistemas e Informática - VIII Ciclo  (2010-Presente)
+
+</div>
+<br>
+<div>
+    FORMACIÓN ACADÉMICA COMPLEMENTARIA REALIZADA
+    ________________________________________
+
+    Cursos presenciales
+
+    •	Centro de Informática de la Universidad Nacional Mayor de San Marcos
+    Módulo I : Experto en Ofimática – Windows, Word, Internet                        - 2005
+
+    Módulo II:  Experto en Ofimática – Excel, Power Point, Outlook                  - 2005
+
+    Módulo I :  Ensamblaje, Diagnóstico y Mantenimiento de Computadores    - 2007
+
+    Módulo II:  Ensamblaje, Diagnóstico y Mantenimiento de Computadores    - 2007
+
+    Curso Básico de Informática                                                                         - 2010
+
+    •	Seminarios
+    “Marketing 2.0:Nuevos medios de Comunicación”, Centro de Ingeniería     -2011
+    TIC CD - Lima
+
+    •	Sistemas UNI
+    Curso Java cliente Servidor                                                                          -2013
+
+    •	Instituto Cultural Peruano Norteamericano, Inglés
+    Nivel Básico                                                                                                   -2010
+    Nivel Intermedio                                                                                             -2012
+    Nivel Avanzado                                                                                              -2013
+
+    Cursos a distancia, online
+
+    •	Lynda.com
+    Git Essential Training                                                                                     -2013
+    Introducing PHP                                                                                             -2013
+    Up and Running with Bootstrap                                                                     -2013
+
+    •	Infinite Skills
+    PHP MySQL                                                                                                   -2013
+
+    •	Code school
+    Try jQuery                                                                                                       -2013
+    Try Ruby                                                                                                         -2013
+    Try Git                                                                                                             -2013
+
+
+
+    FORMACIÓN ACADÉMICA COMPLEMENTARIA EN CURSO
+    ________________________________________
+
+    Cursos a distancia, online
+
+    •	Pontificia Universidad Católica de Chile
+    Evaluación de decisiones estratégicas
+
+    •	University of California, Berkeley
+    Software as a Service
+
+    •	Lynda.com
+    Drupal 7 Essential Training
+    Responsive Design Fundamentals
+
+
+    Cursos presenciales
+
+    •	Enterprise Java Developer
+    Instituto San Ignacio de Loyola
+
+
+    IDIOMAS
+    ________________________________________
+    •	Inglés
+    Conversación Intermedio
+    Escritura  Intermedio
+    Lectura Avanzado
+
+
+    EXÁMENES INTERNACIONALES
+    ________________________________________
+    •	ELASH2 (530)                                                                                                -2012
+
+    •	TOEFL ITP (153)                                                                                            -2013
+
+
+
+    07 de Agosto del 2013
+
+
+</div>
+
 </body>
 </html>
